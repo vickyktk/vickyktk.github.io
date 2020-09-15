@@ -1,0 +1,172 @@
+
+*{
+    scroll-behavior: smooth;
+    color: white;
+
+}
+/* #navbar{
+    position: fixed;
+    width: 95%;
+    z-index: 1;
+} */
+nav ul a{
+    color: white;
+}
+
+#welcome-section{
+    background-image:url("images/hero2.png");
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    margin-bottom: 5px;
+    height: 90vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(71, 48, 48);
+    color:#fff;
+}
+#welcome-section h1{
+    margin-bottom: 170px;
+}
+#welcome-section span{
+    margin-left: -130px;
+    margin-bottom: 100px;
+}
+#projects{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 30px;
+    margin-bottom: 5px;
+
+}
+
+#projects h1,#projects hr{
+    align-self: center;
+
+}
+
+#projects hr{
+    background-color: #fff;
+    color: white;
+    height: 5px;
+    width: 30%;
+}
+
+
+
+#projects .cards{
+    align-self: center;
+    display: grid;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+}
+
+
+.cards .card{
+    width:98%;
+    border:1px solid white;
+    border-radius: 30px;
+    background-color: #343434;
+    margin-bottom: 7px;
+}
+.card p{
+    background-color: blue;
+    height: 50px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.card img{
+    width:100%;
+    margin-bottom: 10px;
+}
+
+
+
+/* Contact Section */
+
+#contact{
+    background-color: slategray;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+
+#contact p{
+    margin-top: 20px;
+}
+
+.info hr{
+    background-color: #fff;
+    color: white;
+    height: 5px;
+    width: 70%;
+}
+.platforms{
+    margin: 10px;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For Small Devices */
+
+
+@media (max-width:768px){
+    #projects .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    #projects .card{
+        width:98%;
+        border-radius: 30px;
+        background-color: #343434;
+    }
+    #welcome-section{
+        height: 50vh;
+    }
+    #welcome-section h1{
+        margin-top: 170px;
+        font-size: 28px;
+    }
+    #welcome-section span{
+        margin-top: 179px;
+    }
+    .navbar-nav{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+
+    
+}
