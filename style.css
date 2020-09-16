@@ -1,8 +1,7 @@
 
 *{
     scroll-behavior: smooth;
-    color: white;
-
+    /* color: white; */
 }
 /* #navbar{
     position: fixed;
@@ -13,37 +12,38 @@ nav ul a{
     color: white;
 }
 
-#welcome-section{
-    background-image:url("images/hero2.png");
-    background-position: center;
-    background-size: cover;
-    width:100%;
-    margin-bottom: 5px;
-    height: 90vh;
+#welcome {
     display: flex;
-    text-align: center;
-    justify-content: center;
     align-items: center;
-    background-color: rgb(71, 48, 48);
-    color:#fff;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(239, 239, 241, 0.986);
+    color:#000;
 }
-#welcome-section h1{
-    margin-bottom: 170px;
+
+
+
+#welcome .about{
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: cursive;
 }
-#welcome-section span{
-    margin-left: -130px;
-    margin-bottom: 100px;
-}
+
+
+
+
+/* PROJECTS SECTION */
+
 #projects{
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: rgba(187, 139, 139, 0.774);
     padding: 30px;
     margin-bottom: 5px;
-
+    align-items: center;
+    justify-content: center;
 }
 
-#projects h1,#projects hr{
+#projects .heading{
     align-self: center;
 
 }
@@ -52,39 +52,38 @@ nav ul a{
     background-color: #fff;
     color: white;
     height: 5px;
-    width: 30%;
 }
 
 
 
+/* THE ACTUAL PROJECTS */
 #projects .cards{
     align-self: center;
-    display: grid;
-    padding: 5px;
-    text-align: center;
-    width: 100%;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 
+
+/* THE CARD (images & button) */
 .cards .card{
-    width:98%;
     border:1px solid white;
     border-radius: 30px;
-    background-color: #343434;
     margin-bottom: 7px;
-}
-.card p{
-    background-color: blue;
-    height: 50px;
-    text-align: center;
-    font-size: 22px;
-    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-bottom: 10px;
 }
 
 
 .card img{
     width:100%;
+    align-self: center;
+
     margin-bottom: 10px;
 }
 
@@ -110,17 +109,32 @@ nav ul a{
     height: 5px;
     width: 100%;
 }
+
 .platforms{
-    margin: 10px;
     width: 20%;
     display: flex;
-    justify-content: space-between;
-
 }
 
 
 
+.specialities{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: blueviolet;
+    padding: 10px;
+}
+.specialities  .title{
+    align-self: center;
+}
 
+.specialities .stack{
+    align-self: start;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
 
 
 
@@ -143,30 +157,58 @@ nav ul a{
 
 
 @media (max-width:768px){
+    #welcome{
+        display: flex;
+        text-align: center;
+    }
+    #welcome .about h1{
+        font-size: 20px;
+    }
+    #projects .heading h1{
+        font-size: 30px;
+    }
+
+    .cards .description h3{
+        font-size: 24px;
+    }
     #projects .cards{
         display: flex;
         flex-direction: column;
+        /* text-align: center; */
+        justify-content: flex-start;
     }
     #projects .card{
         width:98%;
         border-radius: 30px;
-        background-color: #343434;
     }
-    #welcome-section{
-        height: 50vh;
+    #welcome{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    #welcome-section h1{
-        margin-top: 170px;
-        font-size: 28px;
-    }
-    #welcome-section span{
-        margin-top: 179px;
-    }
-    .navbar-nav{
-        display: grid;
-        grid-template-columns: auto auto auto;
-    }
-
 
     
+    #projects .cards{
+        flex-direction: column;
+    }
+
+
+
+    .navbar-nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .platforms{
+         width: 100%;
+         align-self: flex-start;
+         justify-content: space-between;
+       }  
+       .specialities  .title h3{
+        font-size: 18px;
+    }
+    .specialities  .stack{
+        flex-direction: column;
+    }
 }
