@@ -18,14 +18,14 @@
     height: 100vh;
     color:white;
     width:100%;
+    align-items: center;
 }
 
 
 
 #welcome .about{
-    align-self: center;
-    margin-top: 20%;
-    
+    text-align: center;
+    margin-top: 12%;
 }
 
 
@@ -35,6 +35,7 @@
     flex-wrap: wrap;
     column-gap: 14px;
     margin-right: 10px;
+    justify-self: start;
 }
 
 #link-list a{
@@ -49,7 +50,7 @@
 #projects{
     display: flex;
     flex-direction: column;
-    background-color: rgba(187, 139, 139, 0.774);
+    background-color: rgb(206 206 234);
     padding: 30px;
     margin-bottom: 5px;
     align-items: center;
